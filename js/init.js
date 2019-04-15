@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, {
-    duration: 600,
+    duration: 0,
     indicators: true,
     fullWidth: true,
 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   autoplay()
   function autoplay() {
     $('.carousel').carousel('next');
-    setTimeout(autoplay, 4500);
+    setTimeout(autoplay, 7000);
   }
 });
 

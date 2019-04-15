@@ -1,12 +1,30 @@
 
 #logo{
-  width: 150px !important;
+  width: 100px ;
   height: auto;
 }
 
 .navbar-fixed {
   position: absolute;
   z-index:999999999;
+}
+
+#sliderF{
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.tittle{
+  color: #757575
+}
+
+.sliderText{
+  color: #fff;
+  font-weight: bold 
+}
+
+p{
+  text-align: justify;
 }
 
 nav ul a,
@@ -45,6 +63,10 @@ p {
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  #sliderF{
+    max-height: 35vh;
+    min-height: 35vh;
   }
 }
 
