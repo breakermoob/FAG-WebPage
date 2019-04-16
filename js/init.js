@@ -1,4 +1,37 @@
-$(document).ready(function(){
+var count = 0;
+
+$(document).on("click", ".imgPlan", function () {
+  $('nav').removeClass('pink lighten-3');
+  if (count == 1) {
+    $('nav').addClass('pink lighten-3');
+    count = 0;
+  } else {
+    $('nav').removeClass('pink lighten-3');
+    count = 1;
+  }
+})
+
+$(document).on("click", "#materialbox-overlay", function () {
+  $('nav').addClass('pink lighten-3');
+  count = 0;
+})
+
+$(document).ready(function () {
+
+  $(window).scroll(function () {
+
+    if ($(window).scrollTop() > 300) {
+      $('nav').addClass('pink lighten-3');
+    } else {
+      $('nav').removeClass('pink lighten-3');
+    }
+
+  });
+
+});
+
+
+$(document).ready(function () {
   $('.materialboxed').materialbox();
 });
 
