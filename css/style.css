@@ -1,7 +1,12 @@
 
 #logo{
-  width: 100px ;
+  width: 85px ;
   height: auto;
+}
+
+nav{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-fixed {
@@ -23,6 +28,10 @@
   font-weight: bold 
 }
 
+#imgParallaxFix{
+  max-width: 100vw;
+}
+
 p{
   text-align: justify;
 }
@@ -32,12 +41,17 @@ nav .brand-logo {
   color: #fff;
 }
 
+nav li a:hover{
+  background:#ec407a;
+}
+
+
 p {
   line-height: 2rem;
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #ffffff;
 }
 
 .parallax-container {
@@ -67,6 +81,9 @@ p {
   #sliderF{
     max-height: 35vh;
     min-height: 35vh;
+  }
+  #imgParallaxFix{
+    max-width: 250vw;
   }
 }
 
